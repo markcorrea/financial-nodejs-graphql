@@ -1,0 +1,92 @@
+# query {
+#   User(id: "5bc72aa31fbaf3096e7b1c90") {
+#     id,
+#     email,
+#     name
+#   }	
+# }
+
+# query {
+#   Users {
+#     id
+#     email
+#     name
+#     posts {
+# 			id
+#       uid
+#       title
+#       body
+#     }
+#   }
+# }
+
+query {
+	User(id: "5bc72aa31fbaf3096e7b1c90") {
+    id
+    email
+    name
+    posts {
+			id
+      uid
+      title
+      body
+    }
+  }
+}
+
+# mutation{
+#   RemoveUser(id: "5bc6c4188f7762095151c039") {
+# 		id,
+#     email,
+#     name
+#   }
+# }
+
+# mutation{
+#   UpdateUser(id: "5bc6c4188f7762095151c039",
+#     data: {
+#     email: "exampleNew@gmail.com",
+#     name: "Marcus Correa"
+#   }) {
+# 		id,
+#     email,
+#     name
+#   }
+# }
+
+# mutation{
+#   AddUser(data: {
+#     email: "example@yahoo.com",
+#     name: "Name Goes Here"
+#   }) {
+# 		id,
+#     email,
+#     name
+#   }
+# }
+
+# mutation {
+#   AddPost(data: {
+# 		uid: "5bc6c4188f7762095151c039",
+#     title: "New Iphone Released",
+#     body: "Random text"
+#   }) {
+# 		uid,
+#     title,
+#     body
+#   }
+# }
+
+
+# mutation {
+# 	AddPost(data: {
+#     uid: "5bc72aa31fbaf3096e7b1c90",
+#     title: "Some new title",
+#     body:  "Some random content"
+#   }) {
+#     id
+#     uid
+#     title
+#     body
+#   }
+# }

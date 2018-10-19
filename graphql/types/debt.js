@@ -7,8 +7,8 @@ import {
     GraphQLFloat
 } from 'graphql';
 
-export const outgoingType = new GraphQLObjectType({
-    name: 'Outgoing',
+export const debtType = new GraphQLObjectType({
+    name: 'Debt',
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID)
@@ -19,27 +19,21 @@ export const outgoingType = new GraphQLObjectType({
         name: {
             type: GraphQLString
         },
-        paidAt: {
+        expiresAt: {
             type: GraphQLFloat
         },
         value: {
             type: GraphQLFloat
         },
-        did: {
-            type: GraphQLString
-        },
         mid: {
-            type: GraphQLString
-        },
-        pmid: {
             type: GraphQLString
         }
     })
 });
 
-export const outgoingInputType = new GraphQLInputObjectType({
-    name: 'OutgoingInput',
-    description: 'Insert Outgoing',
+export const debtInputType = new GraphQLInputObjectType({
+    name: 'DebtInput',
+    description: 'Insert Incoming',
     fields: () => ({
         ref: {
             type: GraphQLString
@@ -47,20 +41,15 @@ export const outgoingInputType = new GraphQLInputObjectType({
         name: {
             type: GraphQLString
         },
-        paidAt: {
+        expiresAt: {
             type: GraphQLFloat
         },
         value: {
             type: GraphQLFloat
         },
-        did: {
-            type: GraphQLString
-        },
         mid: {
-            type: GraphQLString
-        },
-        pmid: {
             type: GraphQLString
         }
     })
 });
+    

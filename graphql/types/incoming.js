@@ -20,7 +20,7 @@ export const incomingType = new GraphQLObjectType({
       type: GraphQLString
     },
     receivedAt: {
-      type: GraphQLID
+      type: GraphQLFloat
     },
     value: {
       type: GraphQLFloat
@@ -42,7 +42,7 @@ export const incomingInputType = new GraphQLInputObjectType({
       type: GraphQLString
     },
     receivedAt: {
-      type: GraphQLID
+      type: GraphQLFloat
     },
     value: {
       type: GraphQLFloat

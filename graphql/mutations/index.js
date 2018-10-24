@@ -7,11 +7,11 @@ import paymentMethodMutation from './paymentMethod';
 import paymentMethodKindMutation from './paymentMethodKind';
 
 export default {
-    ...incomingMutation,
-    ...outgoingMutation,
-    ...debtMutation,
-    ...movementMutation,
-    ...userMutation,
-    ...paymentMethodMutation,
-    ...paymentMethodKindMutation
-}
+	...incomingMutation,
+	...outgoingMutation,
+	...debtMutation,
+	...movementMutation,
+	...userMutation,
+	...paymentMethodMutation,
+	...paymentMethodKindMutation
+};

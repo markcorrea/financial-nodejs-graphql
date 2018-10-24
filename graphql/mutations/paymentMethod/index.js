@@ -3,7 +3,7 @@ import RemovePaymentMethod from './remove';
 import UpdatePaymentMethod from './update';
 
 export default {
-    AddPaymentMethod,
-    RemovePaymentMethod,
-    UpdatePaymentMethod
-}
+	AddPaymentMethod,
+	RemovePaymentMethod,
+	UpdatePaymentMethod
+};

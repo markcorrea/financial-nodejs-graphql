@@ -3,7 +3,7 @@ import RemoveUser from './remove';
 import UpdateUser from './update';
 
 export default {
-    AddUser,
-    RemoveUser,
-    UpdateUser
-}
+	AddUser,
+	RemoveUser,
+	UpdateUser
+};

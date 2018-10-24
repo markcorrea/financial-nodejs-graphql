@@ -3,7 +3,7 @@ import RemoveMovement from './remove';
 import UpdateMovement from './update';
 
 export default {
-    AddMovement,
-    RemoveMovement,
-    UpdateMovement
-}
+	AddMovement,
+	RemoveMovement,
+	UpdateMovement
+};

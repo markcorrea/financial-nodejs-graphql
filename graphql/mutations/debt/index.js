@@ -3,7 +3,7 @@ import RemoveDebt from './remove';
 import UpdateDebt from './update';
 
 export default {
-    AddDebt,
-    RemoveDebt,
-    UpdateDebt
-}
+	AddDebt,
+	RemoveDebt,
+	UpdateDebt
+};

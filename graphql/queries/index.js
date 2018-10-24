@@ -7,11 +7,11 @@ import paymentMethodQuery from './paymentMethod';
 import paymentMethodKindQuery from './paymentMethodKind';
 
 export default {
-    ...incomingQuery,
-    ...outgoingQuery,
-    ...debtQuery,
-    ...movementQuery,
-    ...userQuery,
-    ...paymentMethodQuery,
-    ...paymentMethodKindQuery
+	...incomingQuery,
+	...outgoingQuery,
+	...debtQuery,
+	...movementQuery,
+	...userQuery,
+	...paymentMethodQuery,
+	...paymentMethodKindQuery
 };
